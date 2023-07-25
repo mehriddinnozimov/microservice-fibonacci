@@ -1,0 +1,24 @@
+{
+  "name": "task-for-greenapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mehriddinnozimov/task-for-green-api.git"
+  },
+  "author": "Mehriddin Nozimov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehriddinnozimov/task-for-green-api/issues"
+  },
+  "homepage": "https://github.com/mehriddinnozimov/task-for-green-api#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.45.0"
+  }
+}
