@@ -1,7 +1,6 @@
 const cache: number[] = [0, 1];
 
 export function fibonacci(n: number) {
-    console.log(n, cache, cache[n]);
     if(typeof cache[n] === "number") return cache[n];
     if (n <= 1) {
         return n;
