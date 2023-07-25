@@ -10,7 +10,7 @@ async function fibonnachi(number: number) {
 }
 
 async function main() {
-    const numbers = [15, 16, 14, 210, 180, 160, 300];
+    const numbers = [10, 16, 14, 210, 180, 120, 100, 80, 44];
 
     for(const number of numbers) {
         console.time(`${number}`);

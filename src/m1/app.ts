@@ -20,10 +20,11 @@ export class App {
         this.producer.on("response", (uiid, result) => {
             const res = this.map.get(uiid);
 
-            console.log(result, res);
             if(res) {
                 res.write(`${result}`);
                 res.end();
+
+                this.map.delete(uiid);
             }
         });
     }
