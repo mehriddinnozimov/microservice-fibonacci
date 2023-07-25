@@ -4,10 +4,8 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "start": "",
-    "dev:m1": "nodemon src/m1/index.ts",
-    "dev:client": "nodemon src/client/index.ts",
-    "dev:m2": "nodemon src/m2/index.ts"
+    "start": "node build/index.js",
+    "dev": "nodemon src/index.ts"
   },
   "repository": {
     "type": "git",

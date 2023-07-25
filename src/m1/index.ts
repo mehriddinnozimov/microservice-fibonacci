@@ -9,7 +9,7 @@ const app = new App(producer);
 
 const server = createServer(app.build());
 
-async function main() {
+export async function main() {
     await producer.init();
     app.init();
 
@@ -17,5 +17,3 @@ async function main() {
         console.log(`Server (M1) starter. PORT: ${M1_PORT}`);
     });
 }
-
-main();
