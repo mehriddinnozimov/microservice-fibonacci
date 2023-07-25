@@ -1,0 +1,7 @@
+NODE_ENV=development
+
+M1_PORT=3000
+
+AMQP_URL=amqp://localhost:5672
+AMQP_REQUEST_QUEUE=amqp_request_queue
+AMQP_RESPONSE_QUEUE=amqp_response_queue
