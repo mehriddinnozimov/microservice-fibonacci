@@ -1,5 +1,5 @@
 import amqplib, { Channel, Connection } from "amqplib";
-import { fibonacci } from "./fibonnachi";
+import { Fibonnachi } from "./fibonnachi";
 
 export class Consumer {
     private connection: Connection | null = null;
@@ -8,6 +8,7 @@ export class Consumer {
     constructor(
         private readonly URL: string,
         private readonly REQUEST_QUEUE: string,
+        private readonly fibonnachi: Fibonnachi
 
     ) {}
 
@@ -30,7 +31,7 @@ export class Consumer {
                 const numberString = message.content.toString("utf-8");
                 const number = Number.parseInt(numberString);
 
-                const result = fibonacci(number);
+                const result = this.fibonnachi.get(number);
                 const resultString = `${result}`;
 
                 channel.sendToQueue(message.properties.replyTo, Buffer.from(resultString), {
